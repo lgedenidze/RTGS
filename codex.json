@@ -1,0 +1,33 @@
+{
+  "projectName": "RTGS_ISO20022_Migration",
+  "description": "Migrate from MT messages to ISO 20022 XML using Oracle 10g logic. Preserve message routing and support bulk generation.",
+  "documentationFolder": "documentation/",
+  "sqlFolder": "sql/",
+  "coreProcedures": [
+    "JOB_PROCESS_MESSAGES",
+    "JOB_SEND_MT_MESSAGE",
+    "JOB_SEND_BULK_MESSAGE",
+    "MT_MESSAGE_FILE"
+  ],
+  "messageMapping": {
+    "MT103": "pacs.008",
+    "MT202": "pacs.009",
+    "MT205": "pacs.009",
+    "MT900": "camt.054",
+    "MT910": "camt.054",
+    "MT198": "camt.025",
+    "MT298": "camt.025"
+  },
+  "generationRules": {
+    "preserveExistingLogic": true,
+    "outputFormat": "XML",
+    "schemaCompliance": "ISO 20022 / CBPR+",
+    "validation": true,
+    "logging": "BTA_MT.WRITEMTLOG / WRITE_MSG_GEN_LOG",
+    "bulkSupport": true
+  },
+  "aiSuggestions": {
+    "codexPromptTemplate": "Using ISO 20022 rules and Oracle procedures (JOB_*), generate pacs.008, pacs.009 or camt.054 or all messages that now old codes supports ,rtgs and BTA_MT  messages as XML. Follow structure and logic from the SQL files in /sql.",
+    "exampleUse": "Create pacs.009 for transaction 8821 using logic in JOB_SEND_MT_MESSAGE."
+  }
+}
