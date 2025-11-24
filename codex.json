@@ -3,6 +3,7 @@
   "description": "Migrate from MT messages to ISO 20022 XML using Oracle 10g logic. Preserve message routing and support bulk generation.",
   "documentationFolder": "documentation/",
   "sqlFolder": "sql/",
+  "xsdFolder": "xsd/",
   "coreProcedures": [
     "JOB_PROCESS_MESSAGES",
     "JOB_SEND_MT_MESSAGE",
