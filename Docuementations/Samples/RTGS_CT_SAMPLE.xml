@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="urn:montran:message.02">
+	<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+		<Fr>
+			<FIId>
+				<FinInstnId>
+					<BICFI>PAHAGE22</BICFI>
+				</FinInstnId>
+			</FIId>
+		</Fr>
+		<To>
+			<FIId>
+				<FinInstnId>
+					<BICFI>ISBKGE22</BICFI> <!--  MONTRAN: Accoring with D001_Annex_F_RTGS_Message_Format.docx, chapter 2.1. General Rules-->
+				</FinInstnId>
+			</FIId>
+		</To>
+		<BizMsgIdr>PAHA202511169783377628</BizMsgIdr>
+		<MsgDefIdr>pacs.008.001.08</MsgDefIdr>
+		<BizSvc>swift.iap.02</BizSvc>
+		<CreDt>2025-11-16T00:00:00+02:00</CreDt>
+	</AppHdr>
+	<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+		<FIToFICstmrCdtTrf>
+			<GrpHdr>
+				<MsgId>PAHA202511169783377628</MsgId>
+				<CreDtTm>2025-11-16T00:00:00+02:00</CreDtTm>
+				<NbOfTxs>1</NbOfTxs>
+				<SttlmInf>
+					<SttlmMtd>CLRG</SttlmMtd>
+					<ClrSys>
+						<Cd>RTG</Cd>
+					</ClrSys>
+				</SttlmInf>
+			</GrpHdr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PAHA202511169783377628</InstrId>
+					<EndToEndId>NOTPROVIDED</EndToEndId>
+					<TxId>PAHA202511169783377628</TxId>
+					<UETR>89690a0b-198a-4c0b-8812-ca431c4fa3ca</UETR>
+				</PmtId>
+				<PmtTpInf>
+					<InstrPrty>HIGH</InstrPrty>
+					<SvcLvl>
+						<Prtry>TTC:0103</Prtry>
+					</SvcLvl>
+					<LclInstrm>
+						<Prtry>RTGSFIToFICustomerCredit</Prtry>
+					</LclInstrm>
+					<CtgyPurp>
+						<Cd>CASH</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<IntrBkSttlmAmt Ccy="GEL">569.52</IntrBkSttlmAmt>
+				<IntrBkSttlmDt>2025-11-16</IntrBkSttlmDt>
+				<ChrgBr>DEBT</ChrgBr>
+				<InstgAgt>
+					<FinInstnId>
+						<BICFI>PAHAGE22</BICFI>
+					</FinInstnId>
+				</InstgAgt>
+				<InstdAgt>
+					<FinInstnId>
+						<BICFI>ISBKGE22</BICFI>
+					</FinInstnId>
+				</InstdAgt>
+				<UltmtDbtr>
+					<Nm>Ultimate Debtor Mario Luca</Nm>
+					<PstlAdr>
+						<Dept>NOT_PROVIDED</Dept>
+						<SubDept>NOT_PROVIDED</SubDept>
+						<StrtNm>NBG Street</StrtNm>
+						<BldgNb>NOT_PROVIDED</BldgNb>
+						<BldgNm>NOT_PROVIDED</BldgNm>
+						<Flr>NOT_PROVIDED</Flr>
+						<PstBx>NOT_PROVIDED</PstBx>
+						<Room>NOT_PROVIDED</Room>
+						<PstCd>NOT_PROVIDED</PstCd>
+						<TwnNm>Tibilisi</TwnNm>
+						<TwnLctnNm>NOT_PROVIDED</TwnLctnNm>
+						<DstrctNm>NOT_PROVIDED</DstrctNm>
+						<CtrySubDvsn>NOT_PROVIDED</CtrySubDvsn>
+						<Ctry>GE</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>123456786</Id>
+							</Othr>
+						</OrgId>
+					</Id>
+				</UltmtDbtr>
+				<Dbtr>
+					<Nm>John Smith</Nm>
+					<PstlAdr>
+						<AdrLine>San Francisco, Sillicon Valley, 260</AdrLine>
+					</PstlAdr>
+					<Id>
+						<PrvtId>
+							<DtAndPlcOfBirth>
+								<BirthDt>1985-03-31</BirthDt>
+								<CityOfBirth>New Jersey</CityOfBirth>
+								<CtryOfBirth>US</CtryOfBirth>
+							</DtAndPlcOfBirth>
+							<Othr>
+								<Id>123456786</Id>
+								<SchmeNm>
+									<Cd>TXID</Cd>
+								</SchmeNm>
+							</Othr>
+							<Othr>
+								<Id>7777788888</Id>
+								<SchmeNm>
+									<Cd>BILL</Cd>
+								</SchmeNm>
+							</Othr>
+						</PrvtId>
+					</Id>
+				</Dbtr>
+				<DbtrAcct>
+					<Id>
+						<IBAN>GE29NB0000000101904917</IBAN>
+					</Id>
+				</DbtrAcct>
+				<DbtrAgt>
+					<FinInstnId>
+						<BICFI>PAHAGE22</BICFI>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>GE</Cd>
+							</ClrSysId>
+							<MmbId>VRMPGE22</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</DbtrAgt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>ISBKGE22</BICFI>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>GE</Cd>
+							</ClrSysId>
+							<MmbId>ZXPLGE22</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Bill Johnson</Nm>
+					<PstlAdr>
+						<AdrLine>San Francisco, Sillicon Valley, 260</AdrLine>
+					</PstlAdr>
+					<Id>
+						<PrvtId>
+							<DtAndPlcOfBirth>
+								<BirthDt>1985-03-31</BirthDt>
+								<CityOfBirth>New Jersey</CityOfBirth>
+								<CtryOfBirth>US</CtryOfBirth>
+							</DtAndPlcOfBirth>
+							<Othr>
+								<Id>Cdtr Id</Id>
+							</Othr>
+						</PrvtId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>GE29NB0000000101904917</IBAN>
+					</Id>
+				</CdtrAcct>
+				<UltmtCdtr>
+					<Nm>Ultimate Creditor Mario Luca</Nm>
+					<PstlAdr>
+						<Dept>NOT_PROVIDED</Dept>
+						<SubDept>NOT_PROVIDED</SubDept>
+						<StrtNm>Big Avenue</StrtNm>
+						<BldgNb>NOT_PROVIDED</BldgNb>
+						<BldgNm>NOT_PROVIDED</BldgNm>
+						<Flr>NOT_PROVIDED</Flr>
+						<PstBx>NOT_PROVIDED</PstBx>
+						<Room>NOT_PROVIDED</Room>
+						<PstCd>NOT_PROVIDED</PstCd>
+						<TwnNm>Tibilisi</TwnNm>
+						<TwnLctnNm>NOT_PROVIDED</TwnLctnNm>
+						<DstrctNm>NOT_PROVIDED</DstrctNm>
+						<CtrySubDvsn>NOT_PROVIDED</CtrySubDvsn>
+						<Ctry>GE</Ctry>
+					</PstlAdr>
+					<Id>
+						<PrvtId>
+							<Othr>
+								<Id>Ultimate Creditor Id</Id>
+							</Othr>
+						</PrvtId>
+					</Id>
+				</UltmtCdtr>
+				<RgltryRptg>
+					<Dtls>
+						<Cd>MB:QR:CR</Cd>
+						<!-- Payment initiation channel -->
+						<Inf>45.7640N 4.8357E</Inf>
+						<!-- Geolocation -->
+					</Dtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>$DETAILS$</Ustrd>
+					<Strd>
+						<RfrdDocInf>
+							<Nb>123</Nb>
+							<!-- Payment Order Number -->
+							<RltdDt>2025-05-30</RltdDt>
+							<!-- Payment Order Date -->
+							<LineDtls>
+								<Id>
+									<RltdDt>2025-05-31</RltdDt>
+									<!-- Payment Order Submission Date -->
+								</Id>
+							</LineDtls>
+						</RfrdDocInf>
+						<CdtrRefInf>
+							<Tp>
+								<CdOrPrtry>
+									<Prtry>MCC</Prtry>
+								</CdOrPrtry>
+							</Tp>
+							<Ref>4655</Ref>
+							<!-- MCC Payment-->
+						</CdtrRefInf>
+						<AddtlRmtInf>Electricity Invoice Nr: 89123123</AddtlRmtInf>
+						<!-- Additional Purpose of Payment -->
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</FIToFICstmrCdtTrf>
+	</Document>
+</Message>

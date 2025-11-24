@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns="urn:montran:message.02" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="urn:montran:message.02">
+	<xs:complexType name="AnyText" mixed="true">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="Message" type="AnyText"></xs:element>
+</xs:schema>

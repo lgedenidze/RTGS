@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:ca29="urn:iso:std:iso:20022:tech:xsd:camt.029.001.07"
+	xmlns:sw2="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.07"
+	xmlns:sw8="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07"
+	xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.01" 
+	xmlns="urn:montran:message.01" targetNamespace="urn:montran:message.01" elementFormDefault="qualified">
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:camt.029.001.07" schemaLocation="camt.029.001.07.xsd" />
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.07" schemaLocation="pacs.002.001.07.xsd" />
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07" schemaLocation="pacs.008.001.07.xsd" />
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.01" schemaLocation="head.001.001.01.xsd" />
+    <xs:element name="Message">
+    	<xs:complexType>
+    		<xs:sequence>
+	    		<xs:element name="AppHdr" type="head:BusinessApplicationHeaderV01"/>
+	    		<xs:choice>
+	    			<xs:element name="RsltnOfInvstgtn" type="ca29:ResolutionOfInvestigationV07"/>
+	    			<xs:element name="FIToFIPmtStsRpt" type="sw2:FIToFIPaymentStatusReportV07"/>
+	    			<xs:element name="FIToFICstmrCdtTrf" type="sw8:FIToFICustomerCreditTransferV07"/>
+	    		</xs:choice>
+	    	</xs:sequence>
+	    </xs:complexType>
+    </xs:element>
+</xs:schema>

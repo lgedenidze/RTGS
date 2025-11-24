@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Message xmlns:env="urn:montran:message.01">
+	<env:AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.01">
+		<Fr>
+			<FIId>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+				</FinInstnId>
+			</FIId>
+		</Fr>
+		<To>
+			<FIId>
+				<FinInstnId>
+					<BICFI>GEATSAAA</BICFI>
+				</FinInstnId>
+			</FIId>
+		</To>
+		<BizMsgIdr>JUNIT_0000000165</BizMsgIdr>
+		<MsgDefIdr>pacs.008.001.07</MsgDefIdr>
+		<BizSvc>ACH</BizSvc>
+		<CreDt>2025-11-10T13:08:59Z</CreDt>
+	</env:AppHdr>
+	<env:FIToFICstmrCdtTrf xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07">
+		<GrpHdr>
+			<MsgId>JUNIT_0000000165</MsgId>
+			<CreDtTm>2025-11-10T13:08:59Z</CreDtTm>
+			<NbOfTxs>4</NbOfTxs>
+			<TtlIntrBkSttlmAmt Ccy="GEL">250.38</TtlIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2025-11-16</IntrBkSttlmDt>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<Prtry>ACH</Prtry>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>JUNIT_00000001650</InstrId>
+				<EndToEndId>JUNIT_00000001650</EndToEndId>
+				<TxId>JUNIT_00000001650</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>PENS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="GEL">19.83</IntrBkSttlmAmt>
+			<ChrgBr>SLEV</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Ultimate Debtor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Debtor Mario Luca</Nm>
+				<PstlAdr>
+					<StrtNm>5th Avenue</StrtNm>
+					<TwnNm>New York</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>New Jersey</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+						<Othr>
+							<Id>7777788888</Id>
+							<SchmeNm>
+								<Cd>BILL</Cd>
+							</SchmeNm>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>ZXPLGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>MOMBGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>VRMPGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Creditor Maria Gonza</Nm>
+				<PstlAdr>
+					<StrtNm>Sillicon Valley</StrtNm>
+					<TwnNm>San Francisco</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>San Francisco</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>12345678901</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</CdtrAcct>
+			<UltmtCdtr>
+				<Nm>Ultimate Creditor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>Ultimate Creditor Id</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtCdtr>
+			<RgltryRptg>
+				<Dtls>
+					<Cd>MB:QR:CR</Cd> <!-- Payment initiation channel -->
+					<Inf>45.7640N 4.8357E</Inf> <!-- Geolocation -->
+				</Dtls>
+			</RgltryRptg>
+			<RmtInf>
+				<Ustrd>April 2025 electricity invoice</Ustrd>
+				<Strd>
+					<RfrdDocInf>
+						<Nb>123</Nb>
+						<!-- Payment Order Number -->
+						<RltdDt>2025-05-30</RltdDt>
+						<!-- Payment Order Date -->
+						<LineDtls>
+							<Id>
+								<RltdDt>2025-05-31</RltdDt>
+								<!-- Payment Order Submission Date -->
+							</Id>
+						</LineDtls>
+					</RfrdDocInf>
+					<CdtrRefInf>
+						<Tp>
+							<CdOrPrtry>
+								<Prtry>MCC</Prtry>
+							</CdOrPrtry>
+						</Tp>
+						<Ref>4655</Ref>
+						<!-- MCC Payment-->
+					</CdtrRefInf>
+					<AddtlRmtInf>Electricity Invoice Nr: 89123123</AddtlRmtInf>
+					<!-- Additional Purpose of Payment -->
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>JUNIT_00000001651</InstrId>
+				<EndToEndId>JUNIT_00000001651</EndToEndId>
+				<TxId>JUNIT_00000001651</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>PENS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="GEL">48.46</IntrBkSttlmAmt>
+			<ChrgBr>SLEV</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Ultimate Debtor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Debtor Mario Luca</Nm>
+				<PstlAdr>
+					<StrtNm>5th Avenue</StrtNm>
+					<TwnNm>New York</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>New Jersey</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+						<Othr>
+							<Id>7777788888</Id>
+							<SchmeNm>
+								<Cd>BILL</Cd>
+							</SchmeNm>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>ZXPLGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>MOMBGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>VRMPGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Creditor Maria Gonza</Nm>
+				<PstlAdr>
+					<StrtNm>Sillicon Valley</StrtNm>
+					<TwnNm>San Francisco</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>San Francisco</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>12345678901</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</CdtrAcct>
+			<UltmtCdtr>
+				<Nm>Ultimate Creditor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>Ultimate Creditor Id</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtCdtr>
+			<RgltryRptg>
+				<Dtls>
+					<Cd>MB:QR:CR</Cd> <!-- Payment initiation channel -->
+					<Inf>45.7640N 4.8357E</Inf> <!-- Geolocation -->
+				</Dtls>
+			</RgltryRptg>
+			<RmtInf>
+				<Ustrd>April 2025 electricity invoice</Ustrd>
+				<Strd>
+					<RfrdDocInf>
+						<Nb>123</Nb>
+						<!-- Payment Order Number -->
+						<RltdDt>2025-05-30</RltdDt>
+						<!-- Payment Order Date -->
+						<LineDtls>
+							<Id>
+								<RltdDt>2025-05-31</RltdDt>
+								<!-- Payment Order Submission Date -->
+							</Id>
+						</LineDtls>
+					</RfrdDocInf>
+					<CdtrRefInf>
+						<Tp>
+							<CdOrPrtry>
+								<Prtry>MCC</Prtry>
+							</CdOrPrtry>
+						</Tp>
+						<Ref>4655</Ref>
+						<!-- MCC Payment-->
+					</CdtrRefInf>
+					<AddtlRmtInf>Electricity Invoice Nr: 89123123</AddtlRmtInf>
+					<!-- Additional Purpose of Payment -->
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>JUNIT_00000001652</InstrId>
+				<EndToEndId>JUNIT_00000001652</EndToEndId>
+				<TxId>JUNIT_00000001652</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>PENS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="GEL">91.81</IntrBkSttlmAmt>
+			<ChrgBr>SLEV</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Ultimate Debtor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Debtor Mario Luca</Nm>
+				<PstlAdr>
+					<StrtNm>5th Avenue</StrtNm>
+					<TwnNm>New York</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>New Jersey</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+						<Othr>
+							<Id>7777788888</Id>
+							<SchmeNm>
+								<Cd>BILL</Cd>
+							</SchmeNm>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>ZXPLGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>PAHAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>VRMPGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Creditor Maria Gonza</Nm>
+				<PstlAdr>
+					<StrtNm>Sillicon Valley</StrtNm>
+					<TwnNm>San Francisco</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>San Francisco</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>12345678901</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</CdtrAcct>
+			<UltmtCdtr>
+				<Nm>Ultimate Creditor Mario Luca</Nm>
+				<Id>
+					<PrvtId>
+						<Othr>
+							<Id>Ultimate Creditor Id</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtCdtr>
+			<RgltryRptg>
+				<Dtls>
+					<Cd>MB:QR:CR</Cd> <!-- Payment initiation channel -->
+					<Inf>45.7640N 4.8357E</Inf> <!-- Geolocation -->
+				</Dtls>
+			</RgltryRptg>
+			<RmtInf>
+				<Ustrd>April 2025 electricity invoice</Ustrd>
+				<Strd>
+					<RfrdDocInf>
+						<Nb>123</Nb>
+						<!-- Payment Order Number -->
+						<RltdDt>2025-05-30</RltdDt>
+						<!-- Payment Order Date -->
+						<LineDtls>
+							<Id>
+								<RltdDt>2025-05-31</RltdDt>
+								<!-- Payment Order Submission Date -->
+							</Id>
+						</LineDtls>
+					</RfrdDocInf>
+					<CdtrRefInf>
+						<Tp>
+							<CdOrPrtry>
+								<Prtry>MCC</Prtry>
+							</CdOrPrtry>
+						</Tp>
+						<Ref>4655</Ref>
+						<!-- MCC Payment-->
+					</CdtrRefInf>
+					<AddtlRmtInf>Electricity Invoice Nr: 89123123</AddtlRmtInf>
+					<!-- Additional Purpose of Payment -->
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>JUNIT_00000001653</InstrId>
+				<EndToEndId>JUNIT_00000001653</EndToEndId>
+				<TxId>JUNIT_00000001653</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>PENS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="GEL">90.28</IntrBkSttlmAmt>
+			<ChrgBr>SLEV</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Ultimate Debtor Mario Luca</Nm>
+				<Id>
+					<!-- 
+            	<OrgId>
+            		<Othr>
+            			<Id>123456786</Id>
+            		</Othr>
+            	</OrgId>
+             -->
+					<PrvtId>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Debtor Mario Luca</Nm>
+				<PstlAdr>
+					<StrtNm>5th Avenue</StrtNm>
+					<TwnNm>New York</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<!--
+            	<OrgId>
+            		<Othr>
+            			<Id>Debtor Org Id</Id>
+            		</Othr>
+            		<Othr>
+            			<Id>123123122131321</Id>
+            			<SchmeNm>
+            				<Cd>BILL</Cd>
+            			</SchmeNm>
+            		</Othr>
+            	</OrgId>
+            	    -->
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>New Jersey</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>123456786</Id>
+						</Othr>
+						<Othr>
+							<Id>7777788888</Id>
+							<SchmeNm>
+								<Cd>BILL</Cd>
+							</SchmeNm>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BAGAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>ZXPLGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>PAHAGE22</BICFI>
+					<ClrSysMmbId>
+						<MmbId>VRMPGE22</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Creditor Maria Gonza</Nm>
+				<PstlAdr>
+					<StrtNm>Sillicon Valley</StrtNm>
+					<TwnNm>San Francisco</TwnNm>
+					<AdrLine>260</AdrLine>
+				</PstlAdr>
+				<Id>
+					<!-- 
+            	<OrgId>
+            		<Othr>
+            			<Id>Creditor Org Id</Id>
+            		</Othr>
+            	</OrgId>
+            	   -->
+					<PrvtId>
+						<DtAndPlcOfBirth>
+							<BirthDt>1985-03-31</BirthDt>
+							<CityOfBirth>San Francisco</CityOfBirth>
+							<CtryOfBirth>US</CtryOfBirth>
+						</DtAndPlcOfBirth>
+						<Othr>
+							<Id>12345678901</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>GE29NB0000000101904917</IBAN>
+				</Id>
+			</CdtrAcct>
+			<UltmtCdtr>
+				<Nm>Ultimate Creditor Mario Luca</Nm>
+				<Id>
+					<!-- 
+            	<OrgId>
+            		<Othr>
+            			<Id>Ultimate Creditor Org Id</Id>
+            		</Othr>
+            	</OrgId>
+            	 -->
+					<PrvtId>
+						<Othr>
+							<Id>Ultimate Creditor Id</Id>
+						</Othr>
+					</PrvtId>
+				</Id>
+			</UltmtCdtr>
+			<RgltryRptg>
+				<Dtls>
+					<Cd>MB:QR:CR</Cd> <!-- Payment initiation channel -->
+					<Inf>45.7640N 4.8357E</Inf> <!-- Geolocation -->
+				</Dtls>
+			</RgltryRptg>
+			<RmtInf>
+				<Ustrd>April 2025 electricity invoice</Ustrd>
+				<Strd>
+					<RfrdDocInf>
+						<Nb>123</Nb>
+						<!-- Payment Order Number -->
+						<RltdDt>2025-05-30</RltdDt>
+						<!-- Payment Order Date -->
+						<LineDtls>
+							<Id>
+								<RltdDt>2025-05-31</RltdDt>
+								<!-- Payment Order Submission Date -->
+							</Id>
+						</LineDtls>
+					</RfrdDocInf>
+					<CdtrRefInf>
+						<Tp>
+							<CdOrPrtry>
+								<Prtry>MCC</Prtry>
+							</CdOrPrtry>
+						</Tp>
+						<Ref>4655</Ref>
+						<!-- MCC Payment-->
+					</CdtrRefInf>
+					<AddtlRmtInf>Electricity Invoice Nr: 89123123</AddtlRmtInf>
+					<!-- Additional Purpose of Payment -->
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</env:FIToFICstmrCdtTrf>
+</env:Message>
